@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sports Mall - User Profile</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Sports Mall</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="trainers.html">Trainers</a></li>
+        <li><a href="scheduling.html">Scheduling</a></li>
+        <li><a class="active" href="profile.html">User Profile</a></li>
+      </ul>
+    </nav>
+
+    <main class="section profile-page">
+      <div class="profile-top">
+        <div>
+          <div class="muted" id="whoami">Loading...</div>
+          <h2 class="profile-title">Your Profile</h2>
+          <p class="muted">Update your personal details and gym info.</p>
+        </div>
+
+        <div class="profile-actions">
+          <button class="btn profile-btn secondary" id="useAdmin">
+            Use Admin
+          </button>
+          <button class="btn profile-btn secondary" id="useTrainer">
+            Use Trainer
+          </button>
+          <button class="btn profile-btn secondary" id="useClient">
+            Use Client
+          </button>
+        </div>
+      </div>
+
+      <div class="profile-grid">
+        <section class="profile-card" aria-label="Profile summary">
+          <div class="profile-header">
+            <div class="avatar" id="avatar"></div>
+            <div class="profile-head-right">
+              <div class="kicker" id="roleLabel"></div>
+              <div class="profile-name" id="summaryName">—</div>
+              <div class="muted" id="summaryEmail">—</div>
+            </div>
+          </div>
+
+          <div class="profile-divider"></div>
+
+          <div class="summary-list">
+            <div class="summary-item">
+              <div class="summary-label">Gym</div>
+              <div class="summary-value" id="summaryGym">—</div>
+            </div>
+            <div class="summary-item">
+              <div class="summary-label">Membership</div>
+              <div class="summary-value" id="summaryPlan">—</div>
+            </div>
+            <div class="summary-item">
+              <div class="summary-label">Phone</div>
+              <div class="summary-value" id="summaryPhone">—</div>
+            </div>
+            <div class="summary-item">
+              <div class="summary-label">Emergency</div>
+              <div class="summary-value" id="summaryEmergency">—</div>
+            </div>
+          </div>
+
+          <div class="profile-divider"></div>
+
+          <div class="muted small" id="lastSaved"></div>
+        </section>
+
+        <section class="profile-card" aria-label="Edit profile">
+          <form id="profileForm" class="profile-form">
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">Full name</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="Your name"
+                  autocomplete="name"
+                />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="you@email.com"
+                  autocomplete="email"
+                />
+              </div>
+              <div class="field">
+                <label for="phone">Phone</label>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  placeholder="+961 ..."
+                  autocomplete="tel"
+                />
+              </div>
+              <div class="field">
+                <label for="gymName">Gym name</label>
+                <input
+                  id="gymName"
+                  name="gymName"
+                  type="text"
+                  placeholder="Gym name"
+                />
+              </div>
+              <div class="field full">
+                <label for="gymAddress">Gym address</label>
+                <input
+                  id="gymAddress"
+                  name="gymAddress"
+                  type="text"
+                  placeholder="City, street, etc."
+                />
+              </div>
+              <div class="field">
+                <label for="membershipPlan">Membership plan</label>
+                <select id="membershipPlan" name="membershipPlan">
+                  <option value="Standard">Standard</option>
+                  <option value="Premium">Premium</option>
+                  <option value="VIP">VIP</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="emergencyContact">Emergency contact</label>
+                <input
+                  id="emergencyContact"
+                  name="emergencyContact"
+                  type="text"
+                  placeholder="Name + phone"
+                />
+              </div>
+              <div class="field full">
+                <label for="bio">Bio</label>
+                <textarea
+                  id="bio"
+                  name="bio"
+                  rows="4"
+                  placeholder="Short bio..."
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button
+                class="btn profile-btn danger"
+                type="button"
+                id="resetBtn"
+              >
+                Reset
+              </button>
+              <button class="btn profile-btn" type="submit" id="saveBtn">
+                Save changes
+              </button>
+            </div>
+
+            <div
+              class="toast"
+              id="toast"
+              role="status"
+              aria-live="polite"
+            ></div>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <script src="profile.js"></script>
+  </body>
+</html>

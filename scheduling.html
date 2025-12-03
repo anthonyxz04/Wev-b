@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Sports Mall - PT Scheduling</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Sports Mall</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="trainers.html">Trainers</a></li>
+        <li><a class="active" href="scheduling.html">Scheduling</a></li>
+        <li><a href="profile.html">User Profile</a></li>
+      </ul>
+    </nav>
+
+    <main class="section schedule-page">
+      <div class="schedule-top">
+        <div>
+          <div class="muted" id="whoami">Loading...</div>
+          <h2 class="schedule-title">PT Program Scheduling</h2>
+          <p class="muted">
+            Pick a trainer, choose a gym, then book a time slot.
+          </p>
+        </div>
+
+        <div class="schedule-actions">
+          <button class="btn schedule-btn secondary" id="useAdmin">
+            Use Admin
+          </button>
+          <button class="btn schedule-btn secondary" id="useTrainer">
+            Use Trainer
+          </button>
+          <button class="btn schedule-btn secondary" id="useClient">
+            Use Client
+          </button>
+        </div>
+      </div>
+
+      <div class="schedule-grid">
+        <section class="profile-card" aria-label="Filters">
+          <div class="panel-title">Filters</div>
+
+          <div class="filter-grid">
+            <div class="field full">
+              <label for="gymSelect">Gym</label>
+              <select id="gymSelect"></select>
+            </div>
+
+            <div class="field full">
+              <label for="trainerSelect">Trainer</label>
+              <select id="trainerSelect"></select>
+            </div>
+
+            <div class="field">
+              <label for="daySelect">Day</label>
+              <select id="daySelect"></select>
+            </div>
+
+            <div class="field">
+              <label for="typeSelect">Session</label>
+              <select id="typeSelect">
+                <option value="1-on-1">1-on-1</option>
+                <option value="Group">Group</option>
+              </select>
+            </div>
+
+            <div class="field full">
+              <label for="searchInput">Search</label>
+              <input
+                id="searchInput"
+                type="text"
+                placeholder="Search by trainer, gym, time..."
+              />
+            </div>
+          </div>
+
+          <div class="profile-divider"></div>
+
+          <div class="legend">
+            <span class="pill free">Free</span>
+            <span class="pill booked">Booked</span>
+            <span class="pill mine">My booking</span>
+          </div>
+
+          <div class="profile-divider"></div>
+
+          <div class="muted small" id="scheduleHint"></div>
+        </section>
+
+        <section class="profile-card" aria-label="Time slots">
+          <div class="slots-head">
+            <div class="panel-title">Available Slots</div>
+            <div class="muted small" id="slotsMeta">—</div>
+          </div>
+
+          <div class="slots-grid" id="slotsGrid"></div>
+
+          <div class="toast" id="toast" role="status" aria-live="polite"></div>
+        </section>
+
+        <section class="profile-card" aria-label="My bookings">
+          <div class="panel-title">My Bookings</div>
+          <div class="bookings-list" id="bookingsList"></div>
+          <div class="profile-divider"></div>
+          <button class="btn schedule-btn danger" id="clearMine">
+            Clear my bookings
+          </button>
+        </section>
+      </div>
+
+      <div
+        class="profile-card modal-backdrop"
+        id="modalBackdrop"
+        aria-hidden="true"
+      >
+        <div
+          class="modal"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Confirm booking"
+        >
+          <div class="modal-top">
+            <div>
+              <div class="panel-title">Confirm Booking</div>
+              <div class="muted small" id="modalSub">—</div>
+            </div>
+            <button class="btn schedule-btn secondary" id="closeModal">
+              Close
+            </button>
+          </div>
+
+          <div class="profile-divider"></div>
+
+          <div class="confirm-grid">
+            <div class="confirm-row">
+              <div class="confirm-label">Gym</div>
+              <div class="confirm-value" id="cGym">—</div>
+            </div>
+            <div class="confirm-row">
+              <div class="confirm-label">Trainer</div>
+              <div class="confirm-value" id="cTrainer">—</div>
+            </div>
+            <div class="confirm-row">
+              <div class="confirm-label">Day</div>
+              <div class="confirm-value" id="cDay">—</div>
+            </div>
+            <div class="confirm-row">
+              <div class="confirm-label">Time</div>
+              <div class="confirm-value" id="cTime">—</div>
+            </div>
+            <div class="confirm-row">
+              <div class="confirm-label">Session</div>
+              <div class="confirm-value" id="cType">—</div>
+            </div>
+            <div class="confirm-row">
+              <div class="confirm-label">Client</div>
+              <div class="confirm-value" id="cClient">—</div>
+            </div>
+          </div>
+
+          <div class="profile-divider"></div>
+
+          <div class="form-actions">
+            <button class="btn schedule-btn danger" id="cancelBooking">
+              Cancel slot
+            </button>
+            <button class="btn schedule-btn" id="confirmBooking">
+              Confirm
+            </button>
+          </div>
+
+          <div
+            class="toast"
+            id="modalToast"
+            role="status"
+            aria-live="polite"
+          ></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="pt-scheduling.js"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+{
+  "gyms": [
+    { "id": "gym-1", "name": "Sports Mall HQ", "address": "Beirut, Lebanon" },
+    { "id": "gym-2", "name": "Functional Lab", "address": "Jounieh, Lebanon" },
+    { "id": "gym-3", "name": "Iron District", "address": "Tripoli, Lebanon" }
+  ],
+  "trainers": [
+    { "id": "trainer-1", "name": "Maya Trainer", "gymIds": ["gym-1", "gym-2"] },
+    { "id": "trainer-2", "name": "Omar Coach", "gymIds": ["gym-1", "gym-3"] },
+    { "id": "trainer-3", "name": "Lina PT", "gymIds": ["gym-2"] }
+  ],
+  "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+  "timeSlots": [
+    "08:00",
+    "09:00",
+    "10:00",
+    "11:00",
+    "13:00",
+    "14:00",
+    "15:00",
+    "16:00",
+    "18:00",
+    "19:00"
+  ],
+  "seededBookings": [
+    {
+      "id": "b-100",
+      "gymId": "gym-1",
+      "trainerId": "trainer-2",
+      "day": "Tuesday",
+      "time": "14:00",
+      "type": "1-on-1",
+      "clientId": "client-1"
+    },
+    {
+      "id": "b-101",
+      "gymId": "gym-2",
+      "trainerId": "trainer-1",
+      "day": "Thursday",
+      "time": "18:00",
+      "type": "Group",
+      "clientId": "client-1"
+    }
+  ]
+}

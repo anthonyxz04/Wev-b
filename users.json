@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": "admin-1",
+      "role": "Admin",
+      "name": "Admin Demo",
+      "email": "admin@sportsmall.com",
+      "phone": "+961 70 000 001",
+      "gymName": "Sports Mall HQ",
+      "gymAddress": "Beirut, Lebanon",
+      "membershipPlan": "VIP",
+      "emergencyContact": "HQ Security +961 70 111 111",
+      "bio": "Manages gyms, trainers, and system settings."
+    },
+    {
+      "id": "trainer-1",
+      "role": "Trainer",
+      "name": "Maya Trainer",
+      "email": "maya.trainer@sportsmall.com",
+      "phone": "+961 70 000 010",
+      "gymName": "Functional Lab",
+      "gymAddress": "Jounieh, Lebanon",
+      "membershipPlan": "Premium",
+      "emergencyContact": "Family +961 70 222 222",
+      "bio": "PT coach focused on strength, mobility, and rehab."
+    },
+    {
+      "id": "client-1",
+      "role": "Client",
+      "name": "Ali Client",
+      "email": "ali.client@example.com",
+      "phone": "+961 70 000 100",
+      "gymName": "Iron District",
+      "gymAddress": "Tripoli, Lebanon",
+      "membershipPlan": "Standard",
+      "emergencyContact": "Brother +961 70 333 333",
+      "bio": "Working on consistency and fat loss."
+    }
+  ]
+}
