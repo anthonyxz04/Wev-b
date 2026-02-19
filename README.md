@@ -1,69 +1,99 @@
-Campus Department Network Infrastructure
+1. [Network Engineering] Campus Infrastructure Design
+Files: Computer Networks Project Report (1).docx + .pkt file.
+
+Campus Network Infrastructure Design
 Course: CCEE 454 – Computer Networks
 
-Overview
-Designed and simulated a secure, hierarchical network for a college campus consisting of three departments: Engineering, Administration, and Library.
+Project Overview
+Designed a hierarchical network for a university campus (Engineering, Admin, and Library).
 
-Technical Implementation
-Architecture: Implemented a Router-on-a-Stick configuration using a Cisco 2911 Router and 2960 Switches.
+Technical Highlights
+Configuration: Router-on-a-stick using Cisco 2911 and 2960 switches.
 
-Segmentation: Created specific subnets for each department to optimize traffic and security.
+Protocols: Static Routing, Default Gateways, and ICMP connectivity verification.
 
-Connectivity: Configured a central Web Server accessible to all departments and verified via ICMP Ping tests.
+Validation: Full ping-test documentation and Web Server access verification across departments.
 
-Simulation: Fully functional .pkt file included.
+2. [Project Management] ParkMe Smart City Solution
+File: final project .docx
 
-2. Project: ParkMe Smart City Proposal (BMGT300)
-Repository Name: ParkMe-Project-Management
-File to upload: final project .docx
-
-README Content:
-
-ParkMe: Smart Parking System Management
+ParkMe: Smart City System Management
 Course: BMGT300 – Project Management
 
 Overview
-A comprehensive project management framework for a "Smart Parking" application in Beirut, using camera detection and real-time data processing.
+A comprehensive management framework for an IoT-based parking solution in Beirut.
 
-Management Deliverables
-SOW & WBS: Detailed Statement of Work and Work Breakdown Structure.
+Key Deliverables
+Planning: WBS (Work Breakdown Structure) and GANTT charts for a 12-month rollout.
 
-Strategic Analysis: Conducted TOWS analysis and a complete Business Case.
+Analysis: TOWS Analysis, Business Case development, and Financial Feasibility (ROI/Budgeting).
 
-Financials: Budgeting, resource allocation, and implementation planning.
+Risk: Strategic mitigation plans for technical and operational failure.
 
-Risk Mitigation: Designed strategies for hardware failure and data privacy.
+3. [Research Methodology] Screen Exposure & Cognitive Development
+Files: finalRealResearchProposal (1).docx + screening_outlineFinal.docx
 
-3. Project: Digital Marketing Impact Research (BADM235)
-Repository Name: Digital-Marketing-Research
-File to upload: Anthony research proposal .docx
+Research Methodology: Cognitive Development Study
+Focus: Quantitative analysis of technology's impact on early childhood development.
 
-README Content:
+Methodology Highlights
+Design: Investigation into the correlation between screen time and cognitive milestones in toddlers.
 
-Digital Marketing & Big Data Impact Study
-Course: BADM235 – Business Research Methodology
+Execution: Developed Participant Sampling strategies, Data Collection tools, and Scope/Delimitation frameworks.
 
-Research Summary
-An in-depth research proposal investigating how Big Data and digital transformation influence corporate growth and profitability.
+Role: Led the "Rational" and "Contextual Analysis" portions of the research team.
 
-Key Areas Covered
-Big Data Utilization: How unstructured datasets drive consumer action insights.
+4. [Marketing & Business Comm] EverPure Product Strategy
+File: BMKA200 Project[2] (1) (3).docx
 
-Digital Transformation: The shift toward interdisciplinary business frameworks.
+EverPure: Strategic Product Branding
+Course: BMKA200 – Principles of Marketing
 
-Competitive Advantage: Analyzing business models in the "Marketing 4.0" era.
-
-4. Project: Human Resources & Group Dynamics (Script Projects)
-Repository Name: Soft-Skills-Group-Dynamics
-Files to upload: Script 2 group 2.1.docx and Script_1_group_2.docx
-
-README Content:
-
-Professional Communication & HR Simulations
 Overview
-Documentation of role-playing simulations focused on Workplace Psychology and Human Resource Management.
+Market entry strategy for a sustainable water filtration product addressing local contamination issues.
 
-Key Scenarios
-Conflict Resolution: Acting as an HR Manager to resolve gender-biased promotional conflicts and emotional labor in the workplace.
+Key Features
+Marketing Mix (4Ps): Developed penetration pricing models and multi-channel distribution strategies.
 
-Cultural Intelligence: Navigating cultural norms and identity scripts within a professional and familial context.
+Branding: Created digital marketing campaigns (Instagram/TikTok/Snapchat) and social proofing strategies.
+
+SWOT: In-depth analysis of competitors (Tannourine, Rim) and market opportunities.
+
+5. [Interpersonal & Business Comm] HR & Conflict Simulations
+Files: Script_1 and Script_2
+
+Professional Communication & HR Dynamics
+Role: HR Manager
+
+Focus Areas
+Conflict Resolution: Simulated management of gender-bias disputes and workplace promotional conflicts.
+
+Communication Theory: Applied concepts of Kinesics, Emotional Intelligence (EQ), and Cultural Intelligence to improve team performance.
+
+Identity Scripts: Investigated how cultural norms influence professional development and negotiation.
+
+6. [Database] Database Design
+File: Cosc231- Database.txt
+
+Relational Database Design & SQL
+Course: COSC231 – Database Systems
+
+Overview
+Implementation of relational data structures, focusing on Normalization (1NF, 2NF, 3NF) and ER Diagramming to ensure data integrity and efficient querying.
+
+How to put this on your CV (The "One-Page" Compression)
+Since you have so many, don't list all the details. Use this:
+
+CORE PROJECTS
+
+Networking: Campus Infrastructure Design (Cisco Packet Tracer, Routing/Switching).
+
+Management: ParkMe Smart City PM Plan (WBS, GANTT, TOWS, Budgeting).
+
+Research: Cognitive Development Study (Quantitative Methodology, Sampling).
+
+Marketing: EverPure Market Entry Strategy (Digital Branding, 4P Analysis).
+
+Database: Relational System Design (SQL, Normalization, ERDs).
+
+Soft Skills: HR Simulation Lead (Conflict Resolution, Workplace Psychology).
